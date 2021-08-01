@@ -19,7 +19,7 @@ const forecast = (lat, lng, callback)=>{
                 //     temperature: response.body.current.temperature,
                 //     feels_like: response.body.current.feelslike
                 // }
-                const data = 'It is '+ body.current.temperature + ' degrees outside. But fills like ' + body.current.feelslike
+                const data = 'It is '+ body.current.temperature + ' degrees outside. But fills like ' + body.current.feelslike +". Due to humidity " + body.current.humidity
                 callback(undefined, data)
             }
         })
